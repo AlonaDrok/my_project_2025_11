@@ -1,7 +1,7 @@
 # PROJECT 
 # *Sanctions Risk: Assessment Model for Data Analysis*
 
- 
+![](https://github.com/AlonaDrok/my_project_2025_11/blob/main/sanc.png) 
 
 ### **Dataset Content** 
 
@@ -48,21 +48,21 @@ To understand which characteristics of data from the UK sanctions list, the OFAC
 ### **Hypotheses and Approaches** 
 
 H1: Distribution of Ship Tonnage (Gross Tonnage) to describe the characteristics of the ship in the sanctions list 
-
+![](https://github.com/AlonaDrok/my_project_2025_11/blob/main/histogram.png)
 Figure 1: Distribution of Ship Tonnage (Gross Tonnage) (histogram) 
 
 H2: The distribution of SDN types on the OFAC list shows the distribution of sanctions by entity type 
-
+![](https://github.com/AlonaDrok/my_project_2025_11/blob/main/bar_chart.png)
 Figure 2: Distribution of SDN Types in OFAC List (bar chart) 
 
 H3: Visualization of the comparison of the UK sanctions list and the OFAC VDN list shows the top 15 countries on whose entities sanctions have been imposed in terms of quantitative indicators 
-
+![](https://github.com/AlonaDrok/my_project_2025_11/blob/main/line_plot_uk.png)
 Figure 3.1: Visualization of the comparison of df_UK_sanctions_list and df_ofac_sdn Count of UK Sanctioned per Country (the top 15) (line plot) 
-
+![](https://github.com/AlonaDrok/my_project_2025_11/blob/main/line_plot_ofac.png)
 Figure 3.2: Visualization of the comparison of df_OFAC_sanctions_list and df_ofac_sdn \n Count of OFAC Sanctioned per Country (the top 15) (line plot) 
 
 H4: The distribution of tonnage by the 5 most common flags of countries provides an understanding of which vessels from which countries violate the sanctions regime 
-
+![](https://github.com/AlonaDrok/my_project_2025_11/blob/main/violin_plot.png)
 Figure 4: Tonnage distribution by top 5 most common flags (Violin Plot) 
 
 ### **Project Plan** 
@@ -78,12 +78,12 @@ Data visualization helped visualize and analyze sanctions lists by geographic re
 The data was started in Python via Jupyter Notebook.  
 
 The next step was to process the files and create consolidated data according to the OFAC lists in PostgreSQL. The tables were created according to the described file dat_spec.txt. Files sdn.csv,  add.csv, alt.csv were imported into the created tables and consolidated as cons_data_ofac.csv and also added an illustration file OFAC_cons_str.pdf.  
-
+1[](https://github.com/AlonaDrok/my_project_2025_11/blob/main/sql_cons_sh.png)
  
 
 All further data processing was carried out in Python in a Jupyter notebook. File OFAC_SDN.sql has been added. The FATF data file was downloaded from an Excel spreadsheet previously created from lists in official sources.  Preprocessing was performed using the Python pandas and NumPy modules. The data was adapted for the present work taking into account the specifics of the data use. The EDA steps were performed by using the Python modules matplotlib, seaborn and plotly. A combination of graphical models was developed that together visualize key characteristics of sanctioned vessels and individuals/entities on the lists, combining distributions, classifications, and geographic data. 
 
- 
+ ![](https://github.com/AlonaDrok/my_project_2025_11/blob/main/comb_plot.png)
 
 Together, histograms, line and pair plot, and bar charts provide an understanding of sanction lists, illustrating their content . 
 
@@ -128,12 +128,15 @@ I also plan to learn how to apply machine learning methods to build predictive m
 
 ### **Main Data Analysis libraries**
 
-\- numpy                           \- seaborn  
+\- numpy                                                                  
 
-\- pandas                          \- plotly
+\- pandas  
 
 \- matplotlib  
 
+\- seaborn  
+
+\- plotly
 
 ### **Credits** 
 
